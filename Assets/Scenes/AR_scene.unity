@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4439403, g: 0.4931519, b: 0.5722083, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -332,6 +332,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -762,7 +763,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1941579240}
         m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
-        m_MethodName: loadAR
+        m_MethodName: reloadAR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -867,6 +868,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1068,7 +1070,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78fe00cca0bc2ad49aff94057a94a46e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn_times: 100
   moneyPrefab: {fileID: 2464988732922791739, guid: 0bb3763a445b5de4eb87236307133810, type: 3}
   spawnDelay: 0.1
 --- !u!4 &1085399750
@@ -1392,3 +1393,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8502004a0f2e94df7a1e132c4eed5e76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputText: 
+  inputField: {fileID: 0}

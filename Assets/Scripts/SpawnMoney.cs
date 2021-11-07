@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnMoney : MonoBehaviour{
-    [SerializeField]
-    private float spawn_times;
+    //[SerializeField]
+    private float spawn_times = Data.dropNumber;
     private float nextSpawn;
     [SerializeField]
     private GameObject moneyPrefab;
