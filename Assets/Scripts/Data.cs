@@ -1,3 +1,3 @@
 public class Data{
-	public static int dropNumber = 0;
+	public static int dropNumber = 10; // default value for debugging
 }
