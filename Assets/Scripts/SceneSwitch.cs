@@ -20,6 +20,10 @@ public class SceneSwitch : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void loadSettings(){
+        SceneManager.LoadScene(2);
+    }
+
     public void loadMenu (){
         SceneManager.LoadScene(0);
     }
