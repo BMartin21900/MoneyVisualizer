@@ -9,6 +9,7 @@ public class QRScanner : MonoBehaviour
 
 	public RawImage cameraTexture;
 	public Text text;
+	public Button proceedButton;
 	
 	private WebCamTexture webCamTexture;
 	BarcodeReader barcodeReader;
@@ -19,6 +20,7 @@ public class QRScanner : MonoBehaviour
     // Start is called before the first frame update
     void Start(){
 		DeviceInit();
+		proceedButton.interactable = false;
     }
 
     // Update is called once per frame
@@ -55,7 +57,12 @@ public class QRScanner : MonoBehaviour
 			text.text = result.Text;
 			
 			scanned = true;
+			proceedButton.interactable = true;
 			webCamTexture.Stop();
 		}
+	}
+	
+	public void shutCam(){
+		webCamTexture.Stop();
 	}
 }

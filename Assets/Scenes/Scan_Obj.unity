@@ -506,7 +506,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Text
+  m_Text: Scanning...
 --- !u!222 &353428461
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1153,6 +1153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraTexture: {fileID: 1234500390}
   text: {fileID: 353428460}
+  proceedButton: {fileID: 39917299}
 --- !u!114 &1428753696
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Scan_Obj.unity
+- path: Assets/Scenes/AR_scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
