@@ -43,6 +43,8 @@ public class QRScanner : MonoBehaviour
 		
 		webCamTexture = new WebCamTexture(deviceName,960,720); 
 		cameraTexture.texture = webCamTexture;
+		cameraTexture.rectTransform.localScale = new Vector3(-1f,1f,1f);
+		cameraTexture.rectTransform.localEulerAngles = new Vector3(0,0,90);
 		webCamTexture.Play();
 		
 		barcodeReader = new BarcodeReader();

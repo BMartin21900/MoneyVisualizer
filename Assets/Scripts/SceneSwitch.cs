@@ -31,6 +31,10 @@ public class SceneSwitch : MonoBehaviour
 	public void loadScanner (){
         SceneManager.LoadScene(3);
     }
+	
+	public void loadCardScan (){
+        SceneManager.LoadScene(4);
+    }
     // Start is called before the first frame update
     void Start()
     {
