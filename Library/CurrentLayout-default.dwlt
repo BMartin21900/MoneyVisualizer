@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1157
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 45
+  controlID: 135
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 46
+  controlID: 136
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 47
+  controlID: 137
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 1047.5911
     speed: 2
-    m_Value: 1002.47943
+    m_Value: 1047.5911
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -449,9 +449,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 445b0000
-      m_LastClickedID: 23364
-      m_ExpandedIDs: 10b6ffff3eb6ffff62b6ffff90b6ffffb4b6ffffe2b6ffff02b7ffffdab8fffffab8ffff1ab9fffff0c3ffff1ec5ffffacdfffff3ce8ffff5ee8ffff96e8fffff0e8ffffaceaffffbeeaffffe2eaffff06ebffff74faffff92faffff52fbffffdc490000f44e000052500000c4520000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 36b9ffff64b9ffff8cb9ffff34c2ffff96c3ffff36c5ffffccc5fffff2c5ffff22c7ffffeac7ffff66ceffff8cceffffbaceffffe2ceffff06cfffff36cfffff5ccfffff82cfffffc8d2fffff6d2ffffcad3fffff4d3ffff1ad4ffff34e0ffffbee6ffffe4e6ffff0ce7ffff34e7ffffd0e8fffffae8ffff14e9ffff42e9ffff68ebffff1aefffff3aefffff66efffff8cefffffb2efffffdaefffff04f3ffffdaf3ffff08f4ffff4cf5ffffe8f5ffffbcf6ffffeef6ffff1cf7ffff9cf7ffff8ef8ffffa6f8ffff32faffff62faffff86faffffacfaffff52fbffff504a0000c44a0000364b0000104d0000a64d00001e4f0000504f00004a520000be5200007e5300008c550000005600009c570000ee570000805900007a5a000000600000a0610000146200003e6500009065000036660000606a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -602,22 +602,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\MoneyVisualizer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6e490000
-    m_LastClickedID: 18798
-    m_ExpandedIDs: 000000004c4900004e4900005049000052490000544900005649000000ca9a3b
+    m_SelectedIDs: a6480000
+    m_LastClickedID: 18598
+    m_ExpandedIDs: 0000000086480000884800008a4800008c4800008e4800009048000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -645,7 +645,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004c4900004e49000050490000524900005449000056490000
+    m_ExpandedIDs: 0000000086480000884800008a4800008c4800008e48000090480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

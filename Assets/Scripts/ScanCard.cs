@@ -18,5 +18,6 @@ public class ScanCard : MonoBehaviour
 	
 	public void cardScanned(){
 		Data.card_Last_Four = 8596;
+		Data.remainBalance = 5500;
 	}
 }

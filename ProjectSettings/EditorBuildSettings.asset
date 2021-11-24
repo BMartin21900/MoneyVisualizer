@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Add_Card.unity
     guid: f34e69cc173cf0a4281c36d1867e55ee
+  - enabled: 1
+    path: Assets/Scenes/Currency_help.unity
+    guid: 198e7e80292dbb146882ab3bfc45e9c5
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: ae724298b02323347a2f48e5cb6b33eb, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 80db969851442ee449a05fa253d2945e, type: 2}

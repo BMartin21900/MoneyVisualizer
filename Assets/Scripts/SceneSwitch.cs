@@ -7,12 +7,7 @@ using TMPro;
 
 public class SceneSwitch : MonoBehaviour
 {
-	public string inputText;
-	[SerializeField]
-	public TMP_InputField inputField;
     public void loadAR (){
-		inputText = inputField.text;
-		Data.dropNumber = int.Parse(inputText);
         SceneManager.LoadScene(1);
     }
 	
@@ -34,6 +29,10 @@ public class SceneSwitch : MonoBehaviour
 	
 	public void loadCardScan (){
         SceneManager.LoadScene(4);
+    }
+	
+	public void loadCurrencyEx (){
+        SceneManager.LoadScene(5);
     }
     // Start is called before the first frame update
     void Start()
