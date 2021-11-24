@@ -1,0 +1,487 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.22f1 (e1a7f79fd887) revision 14788599'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1348; Version 2009; 64bit' Language: 'zh' Physical Memory: 16178 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+D:\UnityEditor\2020.3.22f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/MoneyVisualizer
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+7762
+Successfully changed project path to: D:/MoneyVisualizer
+D:/MoneyVisualizer
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 58.28 ms, found 5 plugins.
+Preloading 2 native plugins for Editor in 3.12 ms.
+Initialize engine version: 2020.3.22f1 (e1a7f79fd887)
+[Subsystems] Discovering subsystems at path D:/UnityEditor/2020.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/MoneyVisualizer/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 with Max-Q Design (ID=0x1c20)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   30.0.14.9649
+Initialize mono
+Mono path[0] = 'D:/UnityEditor/2020.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'D:/UnityEditor/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/UnityEditor/2020.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56888
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/UnityEditor/2020.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001357 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 42.94 ms, found 5 plugins.
+Preloading 2 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.445 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1445ms)
+		BeginReloadAssembly (74ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (546ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (153ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (169ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (43ms)
+				BeforeProcessingInitializeOnLoad (7ms)
+				ProcessInitializeOnLoadAttributes (85ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.012236 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEditor.XR.ARKit.XcodeAssetCatalog:WriteAndAddToPBXProject due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 41.78 ms, found 5 plugins.
+Preloading 2 native plugins for Editor in 0.07 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at VuforiaEnabledObserver..cctor () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.InitializeOnLoadVuforiaTaskRunner..cctor () [0x00015] in <0213e6f0fa134fa89db6bafa02899715>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.366 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1367ms)
+		BeginReloadAssembly (328ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (979ms)
+			LoadAssemblies (286ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (330ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (366ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (42ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 5 plugins.
+Preloading 2 native plugins for Editor in 0.09 ms.
+Unloading 2006 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.7 MB.
+System memory in use after: 88.8 MB.
+
+Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 2744.
+Total: 3.340300 ms (FindLiveObjects: 0.220300 ms CreateObjectMapping: 0.077500 ms MarkObjects: 2.973300 ms  DeleteObjects: 0.068300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/money pack/Materials/50dol.mat
+  artifactKey: Guid(a79aff17e881e1749a962f70318439c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Materials/50dol.mat using Guid(a79aff17e881e1749a962f70318439c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d96061c4e502a3b08d9ef3a280a6a16') in 1.039261 seconds 
+  Import took 1.042889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/money pack/Materials/10dol.mat
+  artifactKey: Guid(97acc6cd67fefc54a9c0aa7d803f7bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Materials/10dol.mat using Guid(97acc6cd67fefc54a9c0aa7d803f7bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88086fcb9cf1316759f049121f31a68e') in 0.032559 seconds 
+  Import took 0.035837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/money pack/Materials/500pes.mat
+  artifactKey: Guid(d415f0646d41dba4086ac3296a8673ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Materials/500pes.mat using Guid(d415f0646d41dba4086ac3296a8673ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ccf37ff63c9b9fe09a7eafe289fa9b') in 0.028866 seconds 
+  Import took 0.031612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/money pack/Materials/50pes.mat
+  artifactKey: Guid(f5b6c4118e238bb4fbea478c9e95b956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Materials/50pes.mat using Guid(f5b6c4118e238bb4fbea478c9e95b956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9be851a00f52ab0c8013aa3fdcdecd7') in 0.031290 seconds 
+  Import took 0.034290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/money pack/Materials/20pes.mat
+  artifactKey: Guid(9419463f73656694e82d4b0a01b474e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Materials/20pes.mat using Guid(9419463f73656694e82d4b0a01b474e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ec7108f59dc9b27b236563fdd6ddd7') in 0.027758 seconds 
+  Import took 0.030658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/money pack/Prefabs/50pes.prefab
+  artifactKey: Guid(6aef3600f22d95144a822974d079bd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/50pes.prefab using Guid(6aef3600f22d95144a822974d079bd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0f5679413b774683f3cb73d0ca0fbac') in 0.048470 seconds 
+  Import took 0.051408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/money pack/Prefabs/1000dol.prefab
+  artifactKey: Guid(c7f089707eb325d42b48f6c3c6995154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/1000dol.prefab using Guid(c7f089707eb325d42b48f6c3c6995154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ddd75ac9c5f12346beeca8fdced4647') in 0.029516 seconds 
+  Import took 0.032947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/money pack/Prefabs/1dol.prefab
+  artifactKey: Guid(660f88febf83c8d49b6dc09492c8fda1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/1dol.prefab using Guid(660f88febf83c8d49b6dc09492c8fda1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3686f7674cac5b849c60b2e3effae8e4') in 0.031755 seconds 
+  Import took 0.034605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/money pack/Materials/200pes.mat
+  artifactKey: Guid(dcb644828c3987a46a20e112fd4f3bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Materials/200pes.mat using Guid(dcb644828c3987a46a20e112fd4f3bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd751ae730e7728d0ee2ea8f4456ff14d') in 0.027918 seconds 
+  Import took 0.031033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/money pack/Materials/1dol.mat
+  artifactKey: Guid(0ef5ceb8ee832e747a405193376d6f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Materials/1dol.mat using Guid(0ef5ceb8ee832e747a405193376d6f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5389e33b8b43cebfd1757cd16ac7813e') in 0.029383 seconds 
+  Import took 0.032161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/money pack/Materials/5dol.mat
+  artifactKey: Guid(7238808de96410149b9d9dfa5979c000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Materials/5dol.mat using Guid(7238808de96410149b9d9dfa5979c000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861e67156090947be67cb67804cb22ac') in 0.027747 seconds 
+  Import took 0.031087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/money pack/Prefabs/100dol.prefab
+  artifactKey: Guid(92447023b5ff09e4786ef30d9f474c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/100dol.prefab using Guid(92447023b5ff09e4786ef30d9f474c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bd1c8e93073b01280bb4c9ff3f39ba9') in 0.033225 seconds 
+  Import took 0.036308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/money pack/Prefabs/200pes.prefab
+  artifactKey: Guid(01e7d324791db2b4eb01a369939039b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/200pes.prefab using Guid(01e7d324791db2b4eb01a369939039b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c41bf0aa4e24cc2536cde54caebfa412') in 0.030415 seconds 
+  Import took 0.033267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/money pack/Prefabs/100pes.prefab
+  artifactKey: Guid(7fe88bb0041540246ac7b5080701273b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/100pes.prefab using Guid(7fe88bb0041540246ac7b5080701273b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323bd98dc5494e2e650c30e326b2948c') in 0.034376 seconds 
+  Import took 0.037336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/money pack/Prefabs/10dol.prefab
+  artifactKey: Guid(40dc10335ce28544887fe962fbbd2857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/10dol.prefab using Guid(40dc10335ce28544887fe962fbbd2857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aefee846a433f223c6599ffb30649b90') in 0.029685 seconds 
+  Import took 0.032599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/money pack/Prefabs/20dol.prefab
+  artifactKey: Guid(5898b7068581a0d4ca345fae51327632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/20dol.prefab using Guid(5898b7068581a0d4ca345fae51327632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7edf7f16c2795c1a7f2b2f2a4eca71') in 0.029112 seconds 
+  Import took 0.032768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/money pack/Materials/1000dol.mat
+  artifactKey: Guid(960fc813e27dfe9469601c27d851b0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Materials/1000dol.mat using Guid(960fc813e27dfe9469601c27d851b0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09eaade3d957fdc4be0ee348c5d289c6') in 0.026518 seconds 
+  Import took 0.029297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/money pack/Materials/100pes.mat
+  artifactKey: Guid(dbf61bddaf3a0f64d802aec2c85e20fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Materials/100pes.mat using Guid(dbf61bddaf3a0f64d802aec2c85e20fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '194a8a02176c40715409dd0e628732e0') in 0.026266 seconds 
+  Import took 0.029002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/money pack/Prefabs/500pes.prefab
+  artifactKey: Guid(0faf2c2d980201c4ca855ec6092857c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/500pes.prefab using Guid(0faf2c2d980201c4ca855ec6092857c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57bd30feb554416a9e36e4d9badf450') in 0.029007 seconds 
+  Import took 0.032233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/money pack/Materials/20dol.mat
+  artifactKey: Guid(b4869f772921fc44bbdbcb98b31563b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Materials/20dol.mat using Guid(b4869f772921fc44bbdbcb98b31563b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0e608f5b2c1a64bd87f689328c8111') in 0.026970 seconds 
+  Import took 0.030204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/money pack/Prefabs/5dol.prefab
+  artifactKey: Guid(cd8350cc157a64f40987ea21d20efc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/5dol.prefab using Guid(cd8350cc157a64f40987ea21d20efc71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041eea3ce2084f4d37cd81984c7102c1') in 0.029518 seconds 
+  Import took 0.033235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/money pack/Prefabs/20pes.prefab
+  artifactKey: Guid(8e6aa6e95eeb2e34dbefdc48f0ba9ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/20pes.prefab using Guid(8e6aa6e95eeb2e34dbefdc48f0ba9ab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '652e10445cfd5b97ebb0e8c7548234d1') in 0.028002 seconds 
+  Import took 0.031532 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/money pack/Prefabs/50dol.prefab
+  artifactKey: Guid(3d95bdb1588e94640aa8e06a6ebe9bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/money pack/Prefabs/50dol.prefab using Guid(3d95bdb1588e94640aa8e06a6ebe9bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4061ed7ce5bf756ada18cd354cc8a214') in 0.028324 seconds 
+  Import took 0.031975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 71.580918 seconds.
+  path: Assets/Resources/VuforiaConfiguration.asset
+  artifactKey: Guid(3e15c7c67135b574e92c481d804394ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(3e15c7c67135b574e92c481d804394ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00955bca7abd515d048eeb1a7be7d648') in 0.013018 seconds 
+  Import took 0.016925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.559447 seconds.
+  path: Assets/Scenes/Add_Card.unity
+  artifactKey: Guid(f34e69cc173cf0a4281c36d1867e55ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Add_Card.unity using Guid(f34e69cc173cf0a4281c36d1867e55ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543df80655215e04e759abf5d931e2c3') in 0.003651 seconds 
+  Import took 0.007192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.420006 seconds.
+  path: Assets/Scenes/AR_scene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AR_scene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b080323ecc71ef6915f0b5951b9ad3') in 0.004320 seconds 
+  Import took 0.009376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.053029 seconds.
+  path: Assets/Scenes/Menu_scene.unity
+  artifactKey: Guid(c6aa880dc9dc34c409b301090e891028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu_scene.unity using Guid(c6aa880dc9dc34c409b301090e891028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ea7023ab1848ba895a174d2e2632cd') in 0.003645 seconds 
+  Import took 0.007010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.866314 seconds.
+  path: Assets/Scenes/Settings_scene.unity
+  artifactKey: Guid(3fe2c9650c96c41e69a73880e6e06d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Settings_scene.unity using Guid(3fe2c9650c96c41e69a73880e6e06d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc73ef854ae4c55232a67ba62cff0e1c') in 0.002884 seconds 
+  Import took 0.006449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 107.108987 seconds.
+  path: Assets/Scenes/Scan_Obj.unity
+  artifactKey: Guid(d08a3a044540dc848a2ed720469f0db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Scan_Obj.unity using Guid(d08a3a044540dc848a2ed720469f0db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b27f10c77459a3ddb6775ab8d017cb9e') in 0.002973 seconds 
+  Import took 0.006720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.296807 seconds.
+  path: Assets/Scenes/Menu_scene.unity
+  artifactKey: Guid(c6aa880dc9dc34c409b301090e891028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu_scene.unity using Guid(c6aa880dc9dc34c409b301090e891028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2db1842a9c2e2a0debcffeb9709891b') in 0.003367 seconds 
+  Import took 0.007132 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010890 seconds.
+Begin MonoManager ReloadAssembly
+Error: Could not load signature of UnityEditor.XR.ARKit.XcodeAssetCatalog:WriteAndAddToPBXProject due to: Could not load file or assembly 'UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:UnityEditor.iOS.Extensions.Xcode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
+Unloading broken assembly Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll, this assembly can cause crashes in the runtime
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 5 plugins.
+Preloading 2 native plugins for Editor in 0.07 ms.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at VuforiaEnabledObserver..cctor () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Vuforia.EditorClasses.ExtensionTypeProvider.GetVuforiaPackageAbsPath () [0x0004a] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.IsPackageManager () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.ResolvePluginType () [0x00009] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.ExtensionTypeProvider.GetPluginType () [0x0000c] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.VuforiaUtilities.IsVuforiaEnabledInPlayerSettings () [0x00000] in <0213e6f0fa134fa89db6bafa02899715>:0 
+  at Vuforia.EditorClasses.InitializeOnLoadVuforiaTaskRunner..cctor () [0x00015] in <0213e6f0fa134fa89db6bafa02899715>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.076 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1076ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (883ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (320ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (313ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(9) subTarget(16777218) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.56 ms, found 5 plugins.
+Preloading 2 native plugins for Editor in 0.06 ms.
+Unloading 1972 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.5 MB.
+System memory in use after: 88.7 MB.
+
+Unloading 42 unused Assets to reduce memory usage. Loaded Objects now: 2787.
+Total: 3.868700 ms (FindLiveObjects: 0.365800 ms CreateObjectMapping: 0.220100 ms MarkObjects: 3.253600 ms  DeleteObjects: 0.027100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
