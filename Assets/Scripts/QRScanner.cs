@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using ZXing;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QRScanner : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class QRScanner : MonoBehaviour
 	public RawImage cameraTexture;
 	public Text text;
 	public Button proceedButton;
+	public GameObject currency;
+	public int drop_amount;
 	
 	private WebCamTexture webCamTexture;
 	BarcodeReader barcodeReader;
@@ -56,13 +59,19 @@ public class QRScanner : MonoBehaviour
 		
 		if(result != null){
 			Debug.Log(result.Text);
-			text.text = result.Text;
-			
+			text.text = "this item is $"+ result.Text + ".00";
+			drop_amount = int.Parse(result.Text);
 			scanned = true;
 			proceedButton.interactable = true;
 			webCamTexture.Stop();
 		}
 	}
+
+	public void loadAR (){
+		Data.dropNumber = drop_amount;
+		Data.targetCurrency = currency;
+        SceneManager.LoadScene(1);
+    }
 	
 	public void shutCam(){
 		webCamTexture.Stop();

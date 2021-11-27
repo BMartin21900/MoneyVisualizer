@@ -780,8 +780,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputText: 
   inputField: {fileID: 1792115420}
-  USD_prefab: {fileID: 4171634071074826714, guid: 92447023b5ff09e4786ef30d9f474c15, type: 3}
-  pesos_prefab: {fileID: 4171634071074826714, guid: 7fe88bb0041540246ac7b5080701273b, type: 3}
+  USD_prefab: {fileID: 2464988732922791739, guid: 0bb3763a445b5de4eb87236307133810, type: 3}
+  pesos_prefab: {fileID: 2464988732922791739, guid: 57549d6695b8440f3a0678a6eca5f780, type: 3}
   startC: 0
   targetC: 0
   _dropdown_start: {fileID: 621558641}

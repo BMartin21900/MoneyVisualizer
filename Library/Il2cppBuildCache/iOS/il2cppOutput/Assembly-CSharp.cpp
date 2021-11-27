@@ -658,6 +658,7 @@ IL2CPP_EXTERN_C RuntimeClass* WordSelectionEvent_t3FE09C7D7E726DC634003A28E2B3CB
 IL2CPP_EXTERN_C String_t* _stringLiteral000A577FA6F1044FCB37680E918D59D0DA3E7DDA;
 IL2CPP_EXTERN_C String_t* _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD;
 IL2CPP_EXTERN_C String_t* _stringLiteral0133981053AC767ED98F641B459173B5499F4EB0;
+IL2CPP_EXTERN_C String_t* _stringLiteral0301D8895EF0725413CEC0E5520AAE812F74B0B3;
 IL2CPP_EXTERN_C String_t* _stringLiteral042E81C2165064627022D513DE063F1AE9F8EF49;
 IL2CPP_EXTERN_C String_t* _stringLiteral0570B799853B77BFC04E0AB8BD83CD1E5089060A;
 IL2CPP_EXTERN_C String_t* _stringLiteral0A5B75A180F8485D63D34FF1F4EDF6699CD0E2E0;
@@ -667,6 +668,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral15196F05B117690F3E12E56AA0C43803EA0D2A46
 IL2CPP_EXTERN_C String_t* _stringLiteral16DD21BE77B115D392226EB71A2D3A9FDC29E3F0;
 IL2CPP_EXTERN_C String_t* _stringLiteral1BF20F795791AC67CCC9E2B5B855E3A9D68CDDD6;
 IL2CPP_EXTERN_C String_t* _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745;
+IL2CPP_EXTERN_C String_t* _stringLiteral2603FC91B4B7ED4CCF769C32A41B3085E900A598;
 IL2CPP_EXTERN_C String_t* _stringLiteral269F8BFBE6C7517C00380B92291D0799AAB2F285;
 IL2CPP_EXTERN_C String_t* _stringLiteral2A5808F3B889783C5484106C7296410EA27F30B5;
 IL2CPP_EXTERN_C String_t* _stringLiteral3783D62DA544C4A10F6775DC60E5A763AA9BED1B;
@@ -679,6 +681,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral55F097B2603C69F9353B2AE824F1FE43E6B46F87
 IL2CPP_EXTERN_C String_t* _stringLiteral598081DBD06E8B1A338629AF7933F9131C6D33AB;
 IL2CPP_EXTERN_C String_t* _stringLiteral5A3D6FC5AC03F283E51A1E494164E2F6D006FCE2;
 IL2CPP_EXTERN_C String_t* _stringLiteral69CE07E5C7ADCC833DA3E659BC9009F6C3C1346A;
+IL2CPP_EXTERN_C String_t* _stringLiteral6A97CD8C1D670C8E07BD03B4FD57729F8A9D725E;
 IL2CPP_EXTERN_C String_t* _stringLiteral6C3B90D0C27E620F9CB6F4530546C591AB0C5E12;
 IL2CPP_EXTERN_C String_t* _stringLiteral71B680ABF9213B3E8FB888056C235C79CFE83314;
 IL2CPP_EXTERN_C String_t* _stringLiteral71BD498E5FC7E3B8709294B88AB8FAB2CFF77CAE;
@@ -13111,16 +13114,20 @@ public:
 	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___text_5;
 	// UnityEngine.UI.Button QRScanner::proceedButton
 	Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * ___proceedButton_6;
+	// UnityEngine.GameObject QRScanner::currency
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___currency_7;
+	// System.Int32 QRScanner::drop_amount
+	int32_t ___drop_amount_8;
 	// UnityEngine.WebCamTexture QRScanner::webCamTexture
-	WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * ___webCamTexture_7;
+	WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * ___webCamTexture_9;
 	// ZXing.BarcodeReader QRScanner::barcodeReader
-	BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E * ___barcodeReader_8;
+	BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E * ___barcodeReader_10;
 	// UnityEngine.Color32[] QRScanner::data
-	Color32U5BU5D_t7FEB526973BF84608073B85CF2D581427F0235E2* ___data_9;
+	Color32U5BU5D_t7FEB526973BF84608073B85CF2D581427F0235E2* ___data_11;
 	// System.Boolean QRScanner::scanned
-	bool ___scanned_10;
+	bool ___scanned_12;
 	// System.Single QRScanner::interval
-	float ___interval_11;
+	float ___interval_13;
 
 public:
 	inline static int32_t get_offset_of_cameraTexture_4() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___cameraTexture_4)); }
@@ -13150,47 +13157,64 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___proceedButton_6), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_webCamTexture_7() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___webCamTexture_7)); }
-	inline WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * get_webCamTexture_7() const { return ___webCamTexture_7; }
-	inline WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 ** get_address_of_webCamTexture_7() { return &___webCamTexture_7; }
-	inline void set_webCamTexture_7(WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * value)
+	inline static int32_t get_offset_of_currency_7() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___currency_7)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_currency_7() const { return ___currency_7; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_currency_7() { return &___currency_7; }
+	inline void set_currency_7(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
 	{
-		___webCamTexture_7 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___webCamTexture_7), (void*)value);
+		___currency_7 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___currency_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_barcodeReader_8() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___barcodeReader_8)); }
-	inline BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E * get_barcodeReader_8() const { return ___barcodeReader_8; }
-	inline BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E ** get_address_of_barcodeReader_8() { return &___barcodeReader_8; }
-	inline void set_barcodeReader_8(BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E * value)
+	inline static int32_t get_offset_of_drop_amount_8() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___drop_amount_8)); }
+	inline int32_t get_drop_amount_8() const { return ___drop_amount_8; }
+	inline int32_t* get_address_of_drop_amount_8() { return &___drop_amount_8; }
+	inline void set_drop_amount_8(int32_t value)
 	{
-		___barcodeReader_8 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___barcodeReader_8), (void*)value);
+		___drop_amount_8 = value;
 	}
 
-	inline static int32_t get_offset_of_data_9() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___data_9)); }
-	inline Color32U5BU5D_t7FEB526973BF84608073B85CF2D581427F0235E2* get_data_9() const { return ___data_9; }
-	inline Color32U5BU5D_t7FEB526973BF84608073B85CF2D581427F0235E2** get_address_of_data_9() { return &___data_9; }
-	inline void set_data_9(Color32U5BU5D_t7FEB526973BF84608073B85CF2D581427F0235E2* value)
+	inline static int32_t get_offset_of_webCamTexture_9() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___webCamTexture_9)); }
+	inline WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * get_webCamTexture_9() const { return ___webCamTexture_9; }
+	inline WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 ** get_address_of_webCamTexture_9() { return &___webCamTexture_9; }
+	inline void set_webCamTexture_9(WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * value)
 	{
-		___data_9 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___data_9), (void*)value);
+		___webCamTexture_9 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___webCamTexture_9), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_scanned_10() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___scanned_10)); }
-	inline bool get_scanned_10() const { return ___scanned_10; }
-	inline bool* get_address_of_scanned_10() { return &___scanned_10; }
-	inline void set_scanned_10(bool value)
+	inline static int32_t get_offset_of_barcodeReader_10() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___barcodeReader_10)); }
+	inline BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E * get_barcodeReader_10() const { return ___barcodeReader_10; }
+	inline BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E ** get_address_of_barcodeReader_10() { return &___barcodeReader_10; }
+	inline void set_barcodeReader_10(BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E * value)
 	{
-		___scanned_10 = value;
+		___barcodeReader_10 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___barcodeReader_10), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_interval_11() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___interval_11)); }
-	inline float get_interval_11() const { return ___interval_11; }
-	inline float* get_address_of_interval_11() { return &___interval_11; }
-	inline void set_interval_11(float value)
+	inline static int32_t get_offset_of_data_11() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___data_11)); }
+	inline Color32U5BU5D_t7FEB526973BF84608073B85CF2D581427F0235E2* get_data_11() const { return ___data_11; }
+	inline Color32U5BU5D_t7FEB526973BF84608073B85CF2D581427F0235E2** get_address_of_data_11() { return &___data_11; }
+	inline void set_data_11(Color32U5BU5D_t7FEB526973BF84608073B85CF2D581427F0235E2* value)
 	{
-		___interval_11 = value;
+		___data_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___data_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_scanned_12() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___scanned_12)); }
+	inline bool get_scanned_12() const { return ___scanned_12; }
+	inline bool* get_address_of_scanned_12() { return &___scanned_12; }
+	inline void set_scanned_12(bool value)
+	{
+		___scanned_12 = value;
+	}
+
+	inline static int32_t get_offset_of_interval_13() { return static_cast<int32_t>(offsetof(QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07, ___interval_13)); }
+	inline float get_interval_13() const { return ___interval_13; }
+	inline float* get_address_of_interval_13() { return &___interval_13; }
+	inline void set_interval_13(float value)
+	{
+		___interval_13 = value;
 	}
 };
 
@@ -13199,8 +13223,29 @@ public:
 struct ScanCard_t9A941713CEB61B73CB047B0C60EE4CB4B1642852  : public MonoBehaviour_t37A501200D970A8257124B0EAE00A0FF3DDC354A
 {
 public:
+	// UnityEngine.UI.Text ScanCard::text
+	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___text_4;
+	// UnityEngine.GameObject ScanCard::currency
+	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___currency_5;
 
 public:
+	inline static int32_t get_offset_of_text_4() { return static_cast<int32_t>(offsetof(ScanCard_t9A941713CEB61B73CB047B0C60EE4CB4B1642852, ___text_4)); }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * get_text_4() const { return ___text_4; }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 ** get_address_of_text_4() { return &___text_4; }
+	inline void set_text_4(Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * value)
+	{
+		___text_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___text_4), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_currency_5() { return static_cast<int32_t>(offsetof(ScanCard_t9A941713CEB61B73CB047B0C60EE4CB4B1642852, ___currency_5)); }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * get_currency_5() const { return ___currency_5; }
+	inline GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 ** get_address_of_currency_5() { return &___currency_5; }
+	inline void set_currency_5(GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * value)
+	{
+		___currency_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___currency_5), (void*)value);
+	}
 };
 
 
@@ -24895,7 +24940,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QRScanner_Update_m1FDA34476A9AE0BAA29EEB
 {
 	{
 		// if(!scanned){
-		bool L_0 = __this->get_scanned_10();
+		bool L_0 = __this->get_scanned_12();
 		if (L_0)
 		{
 			goto IL_0038;
@@ -24903,12 +24948,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QRScanner_Update_m1FDA34476A9AE0BAA29EEB
 	}
 	{
 		// interval += Time.deltaTime;
-		float L_1 = __this->get_interval_11();
+		float L_1 = __this->get_interval_13();
 		float L_2;
 		L_2 = Time_get_deltaTime_mCC15F147DA67F38C74CE408FB5D7FF4A87DA2290(/*hidden argument*/NULL);
-		__this->set_interval_11(((float)il2cpp_codegen_add((float)L_1, (float)L_2)));
+		__this->set_interval_13(((float)il2cpp_codegen_add((float)L_1, (float)L_2)));
 		// if(interval >= 2){
-		float L_3 = __this->get_interval_11();
+		float L_3 = __this->get_interval_13();
 		if ((!(((float)L_3) >= ((float)(2.0f)))))
 		{
 			goto IL_0038;
@@ -24916,7 +24961,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QRScanner_Update_m1FDA34476A9AE0BAA29EEB
 	}
 	{
 		// interval = 0;
-		__this->set_interval_11((0.0f));
+		__this->set_interval_13((0.0f));
 		// Scan();
 		QRScanner_Scan_m2E5134E2344BC9E8EA20356E54D5F0B1E956D1AA(__this, /*hidden argument*/NULL);
 	}
@@ -24951,10 +24996,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QRScanner_DeviceInit_mAC238DAA67F9EB5AC1
 		String_t* L_2 = V_0;
 		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_3 = (WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 *)il2cpp_codegen_object_new(WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62_il2cpp_TypeInfo_var);
 		WebCamTexture__ctor_m347047EDACC380416BF11424F5F42500DA3F08A0(L_3, L_2, ((int32_t)960), ((int32_t)720), /*hidden argument*/NULL);
-		__this->set_webCamTexture_7(L_3);
+		__this->set_webCamTexture_9(L_3);
 		// cameraTexture.texture = webCamTexture;
 		RawImage_tFE280EF0C73AF19FE9AC24DB06501937DC2D6F1A * L_4 = __this->get_cameraTexture_4();
-		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_5 = __this->get_webCamTexture_7();
+		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_5 = __this->get_webCamTexture_9();
 		NullCheck(L_4);
 		RawImage_set_texture_m1D7BAE6CB629C36894B664D9F5D68CACA88B8D99(L_4, L_5, /*hidden argument*/NULL);
 		// cameraTexture.rectTransform.localScale = new Vector3(-1f,1f,1f);
@@ -24978,13 +25023,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QRScanner_DeviceInit_mAC238DAA67F9EB5AC1
 		NullCheck(L_10);
 		Transform_set_localEulerAngles_mB63076996124DC76E6902A81677A6E3C814C693B(L_10, L_11, /*hidden argument*/NULL);
 		// webCamTexture.Play();
-		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_12 = __this->get_webCamTexture_7();
+		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_12 = __this->get_webCamTexture_9();
 		NullCheck(L_12);
 		WebCamTexture_Play_m8527994B54606AE71602DB93195D2BA44CEDC2B1(L_12, /*hidden argument*/NULL);
 		// barcodeReader = new BarcodeReader();
 		BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E * L_13 = (BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E *)il2cpp_codegen_object_new(BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E_il2cpp_TypeInfo_var);
 		BarcodeReader__ctor_mEFCF32D85BE46598FCC99CED316E922772670948(L_13, /*hidden argument*/NULL);
-		__this->set_barcodeReader_8(L_13);
+		__this->set_barcodeReader_10(L_13);
 		// }
 		return;
 	}
@@ -24996,24 +25041,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QRScanner_Scan_m2E5134E2344BC9E8EA20356E
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0301D8895EF0725413CEC0E5520AAE812F74B0B3);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2603FC91B4B7ED4CCF769C32A41B3085E900A598);
 		s_Il2CppMethodInitialized = true;
 	}
 	Result_t80A0868DCC6BE970405D110D50E60CD639E8AD62 * V_0 = NULL;
 	{
 		// data = webCamTexture.GetPixels32();
-		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_0 = __this->get_webCamTexture_7();
+		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_0 = __this->get_webCamTexture_9();
 		NullCheck(L_0);
 		Color32U5BU5D_t7FEB526973BF84608073B85CF2D581427F0235E2* L_1;
 		L_1 = WebCamTexture_GetPixels32_m698CCD8F458C29D8617CDAA3EAFC797D68879C3B(L_0, /*hidden argument*/NULL);
-		__this->set_data_9(L_1);
+		__this->set_data_11(L_1);
 		// Result result = barcodeReader.Decode(data, webCamTexture.width, webCamTexture.height);
-		BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E * L_2 = __this->get_barcodeReader_8();
-		Color32U5BU5D_t7FEB526973BF84608073B85CF2D581427F0235E2* L_3 = __this->get_data_9();
-		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_4 = __this->get_webCamTexture_7();
+		BarcodeReader_tA5699011374427549C51833EE22EF6E29F873B4E * L_2 = __this->get_barcodeReader_10();
+		Color32U5BU5D_t7FEB526973BF84608073B85CF2D581427F0235E2* L_3 = __this->get_data_11();
+		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_4 = __this->get_webCamTexture_9();
 		NullCheck(L_4);
 		int32_t L_5;
 		L_5 = VirtFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_4);
-		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_6 = __this->get_webCamTexture_7();
+		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_6 = __this->get_webCamTexture_9();
 		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = VirtFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_6);
@@ -25025,7 +25072,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QRScanner_Scan_m2E5134E2344BC9E8EA20356E
 		Result_t80A0868DCC6BE970405D110D50E60CD639E8AD62 * L_9 = V_0;
 		if (!L_9)
 		{
-			goto IL_0076;
+			goto IL_0096;
 		}
 	}
 	{
@@ -25036,28 +25083,63 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QRScanner_Scan_m2E5134E2344BC9E8EA20356E
 		L_11 = Result_get_Text_m32E0659D67493CF7D9FDDBD440490C152C698F06_inline(L_10, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var);
 		Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8(L_11, /*hidden argument*/NULL);
-		// text.text = result.Text;
+		// text.text = "this item is $"+ result.Text + ".00";
 		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_12 = __this->get_text_5();
 		Result_t80A0868DCC6BE970405D110D50E60CD639E8AD62 * L_13 = V_0;
 		NullCheck(L_13);
 		String_t* L_14;
 		L_14 = Result_get_Text_m32E0659D67493CF7D9FDDBD440490C152C698F06_inline(L_13, /*hidden argument*/NULL);
+		String_t* L_15;
+		L_15 = String_Concat_m89EAB4C6A96B0E5C3F87300D6BE78D386B9EFC44(_stringLiteral0301D8895EF0725413CEC0E5520AAE812F74B0B3, L_14, _stringLiteral2603FC91B4B7ED4CCF769C32A41B3085E900A598, /*hidden argument*/NULL);
 		NullCheck(L_12);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_12, L_14);
-		// scanned = true;
-		__this->set_scanned_10((bool)1);
-		// proceedButton.interactable = true;
-		Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * L_15 = __this->get_proceedButton_6();
-		NullCheck(L_15);
-		Selectable_set_interactable_mE6F57D33A9E0484377174D0F490C4372BF7F0D40(L_15, (bool)1, /*hidden argument*/NULL);
-		// webCamTexture.Stop();
-		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_16 = __this->get_webCamTexture_7();
+		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_12, L_15);
+		// drop_amount = int.Parse(result.Text);
+		Result_t80A0868DCC6BE970405D110D50E60CD639E8AD62 * L_16 = V_0;
 		NullCheck(L_16);
-		WebCamTexture_Stop_m55FF77D033EF17D83A6B717418EBA39F174B5708(L_16, /*hidden argument*/NULL);
+		String_t* L_17;
+		L_17 = Result_get_Text_m32E0659D67493CF7D9FDDBD440490C152C698F06_inline(L_16, /*hidden argument*/NULL);
+		int32_t L_18;
+		L_18 = Int32_Parse_mE5D220FEA7F0BFB1B220B2A30797D7DD83ACF22C(L_17, /*hidden argument*/NULL);
+		__this->set_drop_amount_8(L_18);
+		// scanned = true;
+		__this->set_scanned_12((bool)1);
+		// proceedButton.interactable = true;
+		Button_tA893FC15AB26E1439AC25BDCA7079530587BB65D * L_19 = __this->get_proceedButton_6();
+		NullCheck(L_19);
+		Selectable_set_interactable_mE6F57D33A9E0484377174D0F490C4372BF7F0D40(L_19, (bool)1, /*hidden argument*/NULL);
+		// webCamTexture.Stop();
+		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_20 = __this->get_webCamTexture_9();
+		NullCheck(L_20);
+		WebCamTexture_Stop_m55FF77D033EF17D83A6B717418EBA39F174B5708(L_20, /*hidden argument*/NULL);
 	}
 
-IL_0076:
+IL_0096:
 	{
+		// }
+		return;
+	}
+}
+// System.Void QRScanner::loadAR()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QRScanner_loadAR_mF7FA258599DB5EFB35C232C0B3F159F8D016CB13 (QRScanner_tC35F9D9D467BC5E7DF3CE3DFEAB4D7BAE68C4E07 * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Data.dropNumber = drop_amount;
+		int32_t L_0 = __this->get_drop_amount_8();
+		IL2CPP_RUNTIME_CLASS_INIT(Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var);
+		((Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_StaticFields*)il2cpp_codegen_static_fields_for(Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var))->set_dropNumber_0(L_0);
+		// Data.targetCurrency = currency;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_currency_7();
+		((Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_StaticFields*)il2cpp_codegen_static_fields_for(Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var))->set_targetCurrency_4(L_1);
+		// SceneManager.LoadScene(1);
+		IL2CPP_RUNTIME_CLASS_INIT(SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_m5550E6368A6D0E37DACEDA3C5E4BA331836BC3C5(1, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -25067,7 +25149,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QRScanner_shutCam_m9523EC1EB3A46E5D5F83D
 {
 	{
 		// webCamTexture.Stop();
-		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_0 = __this->get_webCamTexture_7();
+		WebCamTexture_t8E1DA1358E0E093A75FF35A336DD81B9EEC7AA62 * L_0 = __this->get_webCamTexture_9();
 		NullCheck(L_0);
 		WebCamTexture_Stop_m55FF77D033EF17D83A6B717418EBA39F174B5708(L_0, /*hidden argument*/NULL);
 		// }
@@ -25079,7 +25161,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QRScanner__ctor_m3E4C240D3EB0380326B6603
 {
 	{
 		// float interval = 0.5f;
-		__this->set_interval_11((0.5f));
+		__this->set_interval_13((0.5f));
 		MonoBehaviour__ctor_mC0995D847F6A95B1A553652636C38A2AA8B13BED(__this, /*hidden argument*/NULL);
 		return;
 	}
@@ -25115,14 +25197,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScanCard_cardScanned_m9452FFC1B6A7F62C69
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6A97CD8C1D670C8E07BD03B4FD57729F8A9D725E);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		// text.text = "Card found! Balance: $400";
+		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_0 = __this->get_text_4();
+		NullCheck(L_0);
+		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, _stringLiteral6A97CD8C1D670C8E07BD03B4FD57729F8A9D725E);
 		// Data.card_Last_Four = 8596;
 		IL2CPP_RUNTIME_CLASS_INIT(Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var);
 		((Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_StaticFields*)il2cpp_codegen_static_fields_for(Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var))->set_card_Last_Four_1(((int32_t)8596));
 		// Data.remainBalance = 5500;
 		((Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_StaticFields*)il2cpp_codegen_static_fields_for(Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var))->set_remainBalance_3(((int32_t)5500));
+		// Data.dropNumber = 4;
+		((Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_StaticFields*)il2cpp_codegen_static_fields_for(Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var))->set_dropNumber_0(4);
+		// Data.targetCurrency = currency;
+		GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * L_1 = __this->get_currency_5();
+		((Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_StaticFields*)il2cpp_codegen_static_fields_for(Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var))->set_targetCurrency_4(L_1);
 		// }
 		return;
 	}

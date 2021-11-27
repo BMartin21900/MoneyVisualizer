@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4439403, g: 0.4931519, b: 0.5722083, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -272,8 +272,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1428753696}
-        m_TargetAssemblyTypeName: SceneSwitch, Assembly-CSharp
+      - m_Target: {fileID: 1428753695}
+        m_TargetAssemblyTypeName: QRScanner, Assembly-CSharp
         m_MethodName: loadAR
         m_Mode: 1
         m_Arguments:
@@ -1166,6 +1166,7 @@ MonoBehaviour:
   cameraTexture: {fileID: 1234500390}
   text: {fileID: 353428460}
   proceedButton: {fileID: 39917299}
+  currency: {fileID: 4171634071074826714, guid: 660f88febf83c8d49b6dc09492c8fda1, type: 3}
 --- !u!114 &1428753696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1178,8 +1179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8502004a0f2e94df7a1e132c4eed5e76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputText: 
-  inputField: {fileID: 0}
 --- !u!1 &1661609135
 GameObject:
   m_ObjectHideFlags: 0
