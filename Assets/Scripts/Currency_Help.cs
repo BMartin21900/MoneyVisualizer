@@ -7,33 +7,68 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Dropdown))]
-public class Currency_Help : MonoBehaviour
-{
+public class Currency_Help : MonoBehaviour{
+
 	public string inputText;
 	[SerializeField]
 	public TMP_InputField inputField;
+	[SerializeField]
+	public GameObject USD_prefab;
+	[SerializeField]
+	public GameObject pesos_prefab;
 	
+	// 0: USD
+	// 1: Pesos
+	// 2: URos
 	public int startC = 0;
 	public int targetC = 0;
 	
+
+	[SerializeField]
+	public Dropdown _dropdown_start;
+
 	[SerializeField]
 	public Dropdown _dropdown;
+
     public void loadAR(){
 		inputText = inputField.text;
-		Data.dropNumber = int.Parse(inputText);
+		int start_amount = int.Parse(inputText);
+		Data.dropNumber = currencyExchange(startC, targetC, start_amount);
+		//Debug.Log(startC);
+		//Debug.Log(targetC);
+		Debug.Log(Data.targetCurrency);
+		Debug.Log(Data.dropNumber);
         SceneManager.LoadScene(1);
     }
 	
+	// will return the amount needed in the target currency
 	public int currencyExchange(int startC, int targetC, int amount){
+		if (startC == targetC){
+			if (startC == 0){
+				Data.targetCurrency = USD_prefab;
+			} else {
+				Data.targetCurrency = pesos_prefab;
+			}
+			return amount;
+		} else {
+			if (startC == 0 && targetC == 1) {
+				Data.targetCurrency = pesos_prefab;
+				return amount * 22;
+			}
+			if (startC == 1 && targetC == 0) {
+				Data.targetCurrency = USD_prefab;
+				return amount / 22;
+			}
+		}
 		return 0;
 	}
 	
 	public void getStartCurrency(int value){
-		startC = value;
+		startC = _dropdown_start.value; //TODO: this is wrong
 	}
 	
 	public void getTargetCurrency(int value){
-		targetC = value;
+		targetC = _dropdown.value;
 	}
 	
     // Start is called before the first frame update

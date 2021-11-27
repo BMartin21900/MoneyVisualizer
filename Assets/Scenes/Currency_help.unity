@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3708625, g: 0.37838694, b: 0.35726872, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -669,9 +669,9 @@ GameObject:
   - component: {fileID: 258880001}
   - component: {fileID: 258880000}
   - component: {fileID: 258879999}
-  - component: {fileID: 258880003}
   - component: {fileID: 258880004}
   - component: {fileID: 258880005}
+  - component: {fileID: 258880003}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -780,9 +780,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputText: 
   inputField: {fileID: 1792115420}
+  USD_prefab: {fileID: 4171634071074826714, guid: 92447023b5ff09e4786ef30d9f474c15, type: 3}
+  pesos_prefab: {fileID: 4171634071074826714, guid: 7fe88bb0041540246ac7b5080701273b, type: 3}
   startC: 0
   targetC: 0
-  _dropdown: {fileID: 621558641}
+  _dropdown_start: {fileID: 621558641}
+  _dropdown: {fileID: 1591441941}
 --- !u!114 &258880004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1639,7 +1642,7 @@ MonoBehaviour:
       - m_Target: {fileID: 258880003}
         m_TargetAssemblyTypeName: Currency_Help, Assembly-CSharp
         m_MethodName: getStartCurrency
-        m_Mode: 0
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3026,7 +3029,7 @@ MonoBehaviour:
       - m_Target: {fileID: 258880003}
         m_TargetAssemblyTypeName: Currency_Help, Assembly-CSharp
         m_MethodName: getTargetCurrency
-        m_Mode: 0
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

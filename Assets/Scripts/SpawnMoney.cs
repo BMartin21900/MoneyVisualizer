@@ -6,13 +6,14 @@ public class SpawnMoney : MonoBehaviour{
     //[SerializeField]
     private float spawn_times = Data.dropNumber;
     private float nextSpawn;
-    [SerializeField]
-    private GameObject moneyPrefab;
+    //[SerializeField]
+    private GameObject moneyPrefab = Data.targetCurrency;
     [SerializeField]
     private float spawnDelay = 1;
+
     // Start is called before the first frame update
     void Start(){
-        
+        //moneyPrefab = Data.targetCurrency;
     }
 
     private void Spawn(){
