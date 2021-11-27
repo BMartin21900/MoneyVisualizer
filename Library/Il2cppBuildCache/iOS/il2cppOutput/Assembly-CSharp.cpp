@@ -667,6 +667,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral0EF911B4E5C5A3E63DAB6CEA449EF637C363EF9B
 IL2CPP_EXTERN_C String_t* _stringLiteral15196F05B117690F3E12E56AA0C43803EA0D2A46;
 IL2CPP_EXTERN_C String_t* _stringLiteral16DD21BE77B115D392226EB71A2D3A9FDC29E3F0;
 IL2CPP_EXTERN_C String_t* _stringLiteral1BF20F795791AC67CCC9E2B5B855E3A9D68CDDD6;
+IL2CPP_EXTERN_C String_t* _stringLiteral1C7CA35CB508A84725D9D97E13B3D5DB7DC00B12;
 IL2CPP_EXTERN_C String_t* _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745;
 IL2CPP_EXTERN_C String_t* _stringLiteral2603FC91B4B7ED4CCF769C32A41B3085E900A598;
 IL2CPP_EXTERN_C String_t* _stringLiteral269F8BFBE6C7517C00380B92291D0799AAB2F285;
@@ -690,6 +691,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral7F85A2723BB62FEF95DD6F8C5F0FF606EA62246A
 IL2CPP_EXTERN_C String_t* _stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D;
 IL2CPP_EXTERN_C String_t* _stringLiteral88BEE283254D7094E258B3A88730F4CC4F1E4AC7;
 IL2CPP_EXTERN_C String_t* _stringLiteral8ACAA4E0B28437F5FD1A41CE6591A16813F05377;
+IL2CPP_EXTERN_C String_t* _stringLiteral91830CFDB9F0113262421856FD423866C4AD696B;
 IL2CPP_EXTERN_C String_t* _stringLiteral960E5E7F211EFF3243DF14EDD1901DC9EF314D62;
 IL2CPP_EXTERN_C String_t* _stringLiteral98655D9DDAAACD9AAA3A303A92432690919B494C;
 IL2CPP_EXTERN_C String_t* _stringLiteral9A7E77DB84E1908153085B0037B2757EFD9E6B67;
@@ -715,9 +717,12 @@ IL2CPP_EXTERN_C String_t* _stringLiteralCEB055F85C5660DEABF3989A924C2D2EDB0C8C84
 IL2CPP_EXTERN_C String_t* _stringLiteralCED30D471F9ECB011896E4C24680A6982ECBCAFE;
 IL2CPP_EXTERN_C String_t* _stringLiteralD00074DE8ACBEBA7EF28BE447E997E8352E84502;
 IL2CPP_EXTERN_C String_t* _stringLiteralD579F97F4A33C344330AED1285CC5B545618BC19;
+IL2CPP_EXTERN_C String_t* _stringLiteralD9655DBBB859B019801BDD285AC4606E357C5621;
 IL2CPP_EXTERN_C String_t* _stringLiteralD99C319B457682A09D028AF022D0B2EE6B4D48A6;
+IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralDECFB8F380101725B06EAE2D3F983211A277171C;
 IL2CPP_EXTERN_C String_t* _stringLiteralE2138FA8D137D1C6C81747FE1638815DDE9177B0;
+IL2CPP_EXTERN_C String_t* _stringLiteralEC916FEDDC66F6F5DF8FE2D8C9E8153B824416E9;
 IL2CPP_EXTERN_C String_t* _stringLiteralEE3657997C5E6EC82CDE374326A95906F03A3315;
 IL2CPP_EXTERN_C String_t* _stringLiteralEF516EC7240CA160FD729299C926B5EDB246658A;
 IL2CPP_EXTERN_C String_t* _stringLiteralF1B6AAF37DDF842141E903D071B58A3BDF13A5C6;
@@ -12823,14 +12828,16 @@ public:
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___USD_prefab_6;
 	// UnityEngine.GameObject Currency_Help::pesos_prefab
 	GameObject_tC000A2E1A7CF1E10FD7BA08863287C072207C319 * ___pesos_prefab_7;
+	// UnityEngine.UI.Text Currency_Help::status_text
+	Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * ___status_text_8;
 	// System.Int32 Currency_Help::startC
-	int32_t ___startC_8;
+	int32_t ___startC_9;
 	// System.Int32 Currency_Help::targetC
-	int32_t ___targetC_9;
+	int32_t ___targetC_10;
 	// UnityEngine.UI.Dropdown Currency_Help::_dropdown_start
-	Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * ____dropdown_start_10;
+	Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * ____dropdown_start_11;
 	// UnityEngine.UI.Dropdown Currency_Help::_dropdown
-	Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * ____dropdown_11;
+	Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * ____dropdown_12;
 
 public:
 	inline static int32_t get_offset_of_inputText_4() { return static_cast<int32_t>(offsetof(Currency_Help_tFC19D48433545865B4A61D156F171F4264BE85FE, ___inputText_4)); }
@@ -12869,38 +12876,47 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___pesos_prefab_7), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_startC_8() { return static_cast<int32_t>(offsetof(Currency_Help_tFC19D48433545865B4A61D156F171F4264BE85FE, ___startC_8)); }
-	inline int32_t get_startC_8() const { return ___startC_8; }
-	inline int32_t* get_address_of_startC_8() { return &___startC_8; }
-	inline void set_startC_8(int32_t value)
+	inline static int32_t get_offset_of_status_text_8() { return static_cast<int32_t>(offsetof(Currency_Help_tFC19D48433545865B4A61D156F171F4264BE85FE, ___status_text_8)); }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * get_status_text_8() const { return ___status_text_8; }
+	inline Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 ** get_address_of_status_text_8() { return &___status_text_8; }
+	inline void set_status_text_8(Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * value)
 	{
-		___startC_8 = value;
+		___status_text_8 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___status_text_8), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_targetC_9() { return static_cast<int32_t>(offsetof(Currency_Help_tFC19D48433545865B4A61D156F171F4264BE85FE, ___targetC_9)); }
-	inline int32_t get_targetC_9() const { return ___targetC_9; }
-	inline int32_t* get_address_of_targetC_9() { return &___targetC_9; }
-	inline void set_targetC_9(int32_t value)
+	inline static int32_t get_offset_of_startC_9() { return static_cast<int32_t>(offsetof(Currency_Help_tFC19D48433545865B4A61D156F171F4264BE85FE, ___startC_9)); }
+	inline int32_t get_startC_9() const { return ___startC_9; }
+	inline int32_t* get_address_of_startC_9() { return &___startC_9; }
+	inline void set_startC_9(int32_t value)
 	{
-		___targetC_9 = value;
+		___startC_9 = value;
 	}
 
-	inline static int32_t get_offset_of__dropdown_start_10() { return static_cast<int32_t>(offsetof(Currency_Help_tFC19D48433545865B4A61D156F171F4264BE85FE, ____dropdown_start_10)); }
-	inline Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * get__dropdown_start_10() const { return ____dropdown_start_10; }
-	inline Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 ** get_address_of__dropdown_start_10() { return &____dropdown_start_10; }
-	inline void set__dropdown_start_10(Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * value)
+	inline static int32_t get_offset_of_targetC_10() { return static_cast<int32_t>(offsetof(Currency_Help_tFC19D48433545865B4A61D156F171F4264BE85FE, ___targetC_10)); }
+	inline int32_t get_targetC_10() const { return ___targetC_10; }
+	inline int32_t* get_address_of_targetC_10() { return &___targetC_10; }
+	inline void set_targetC_10(int32_t value)
 	{
-		____dropdown_start_10 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____dropdown_start_10), (void*)value);
+		___targetC_10 = value;
 	}
 
-	inline static int32_t get_offset_of__dropdown_11() { return static_cast<int32_t>(offsetof(Currency_Help_tFC19D48433545865B4A61D156F171F4264BE85FE, ____dropdown_11)); }
-	inline Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * get__dropdown_11() const { return ____dropdown_11; }
-	inline Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 ** get_address_of__dropdown_11() { return &____dropdown_11; }
-	inline void set__dropdown_11(Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * value)
+	inline static int32_t get_offset_of__dropdown_start_11() { return static_cast<int32_t>(offsetof(Currency_Help_tFC19D48433545865B4A61D156F171F4264BE85FE, ____dropdown_start_11)); }
+	inline Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * get__dropdown_start_11() const { return ____dropdown_start_11; }
+	inline Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 ** get_address_of__dropdown_start_11() { return &____dropdown_start_11; }
+	inline void set__dropdown_start_11(Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * value)
 	{
-		____dropdown_11 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____dropdown_11), (void*)value);
+		____dropdown_start_11 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____dropdown_start_11), (void*)value);
+	}
+
+	inline static int32_t get_offset_of__dropdown_12() { return static_cast<int32_t>(offsetof(Currency_Help_tFC19D48433545865B4A61D156F171F4264BE85FE, ____dropdown_12)); }
+	inline Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * get__dropdown_12() const { return ____dropdown_12; }
+	inline Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 ** get_address_of__dropdown_12() { return &____dropdown_12; }
+	inline void set__dropdown_12(Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * value)
+	{
+		____dropdown_12 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____dropdown_12), (void*)value);
 	}
 };
 
@@ -21637,6 +21653,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Currency_Help_currencyExchange_m1F467
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_mC26E5AD0D8D156C7FFD173AA15827F69225E9DB8 (RuntimeObject * ___message0, const RuntimeMethod* method);
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_m5550E6368A6D0E37DACEDA3C5E4BA331836BC3C5 (int32_t ___sceneBuildIndex0, const RuntimeMethod* method);
+// System.String System.String::Concat(System.String,System.String,System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m37A5BF26F8F8F1892D60D727303B23FB604FEE78 (String_t* ___str00, String_t* ___str11, String_t* ___str22, String_t* ___str33, const RuntimeMethod* method);
 // System.Int32 UnityEngine.UI.Dropdown::get_value()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26_inline (Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.UI.Dropdown::set_value(System.Int32)
@@ -21645,8 +21663,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dropdown_set_value_mE4418D205D53F8A3AD23
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_m88880E0413421D13FD95325EDCE231707CE1F405 (RuntimeObject * __this, const RuntimeMethod* method);
 // System.Int32 TMPro.TMP_Dropdown::get_value()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TMP_Dropdown_get_value_mEA5E013FF3ABE4DE55B4BE384F6333A4DB7F2AB1_inline (TMP_Dropdown_t3FD3826E105DA5CC167E721237E450A4BA855E63 * __this, const RuntimeMethod* method);
-// System.String System.String::Concat(System.String,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m37A5BF26F8F8F1892D60D727303B23FB604FEE78 (String_t* ___str00, String_t* ___str11, String_t* ___str22, String_t* ___str33, const RuntimeMethod* method);
 // !!0 UnityEngine.Component::GetComponent<TMPro.TMP_Text>()
 inline TMP_Text_t86179C97C713E1A6B3751B48DC7A16C874A7B262 * Component_GetComponent_TisTMP_Text_t86179C97C713E1A6B3751B48DC7A16C874A7B262_m528C1077944C1F0ECD8ABBE28E4865132DDACD72 (Component_t62FBC8D2420DA4BE9037AFE430740F6B3EECA684 * __this, const RuntimeMethod* method)
 {
@@ -24288,8 +24304,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Currency_Help_loadAR_mA387412A3215A71663
 		L_3 = Int32_Parse_mE5D220FEA7F0BFB1B220B2A30797D7DD83ACF22C(L_2, /*hidden argument*/NULL);
 		V_0 = L_3;
 		// Data.dropNumber = currencyExchange(startC, targetC, start_amount);
-		int32_t L_4 = __this->get_startC_8();
-		int32_t L_5 = __this->get_targetC_9();
+		int32_t L_4 = __this->get_startC_9();
+		int32_t L_5 = __this->get_targetC_10();
 		int32_t L_6 = V_0;
 		int32_t L_7;
 		L_7 = Currency_Help_currencyExchange_m1F467E66A7273A8D0A205191AB7E831B0FCA7177(__this, L_4, L_5, L_6, /*hidden argument*/NULL);
@@ -24307,6 +24323,103 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Currency_Help_loadAR_mA387412A3215A71663
 		// SceneManager.LoadScene(1);
 		IL2CPP_RUNTIME_CLASS_INIT(SceneManager_tEC9D10ECC0377F8AE5AEEB5A789FFD24364440FA_il2cpp_TypeInfo_var);
 		SceneManager_LoadScene_m5550E6368A6D0E37DACEDA3C5E4BA331836BC3C5(1, /*hidden argument*/NULL);
+		// }
+		return;
+	}
+}
+// System.Void Currency_Help::updateText()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Currency_Help_updateText_mC6F1DC3C9BFA7C8B8D22824A2FB7B84F5AECBAB1 (Currency_Help_tFC19D48433545865B4A61D156F171F4264BE85FE * __this, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1C7CA35CB508A84725D9D97E13B3D5DB7DC00B12);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral91830CFDB9F0113262421856FD423866C4AD696B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD9655DBBB859B019801BDD285AC4606E357C5621);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEC916FEDDC66F6F5DF8FE2D8C9E8153B824416E9);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	String_t* V_2 = NULL;
+	String_t* V_3 = NULL;
+	{
+		// int start_amount = int.Parse(inputField.text);
+		TMP_InputField_tD50B4F3E6822EAC2720FAED56B86E98183F61D59 * L_0 = __this->get_inputField_5();
+		NullCheck(L_0);
+		String_t* L_1;
+		L_1 = TMP_InputField_get_text_m14531DC868984D1436064D2FCF6ADFED61BEE81D_inline(L_0, /*hidden argument*/NULL);
+		int32_t L_2;
+		L_2 = Int32_Parse_mE5D220FEA7F0BFB1B220B2A30797D7DD83ACF22C(L_1, /*hidden argument*/NULL);
+		V_0 = L_2;
+		// int target_amount = currencyExchange(startC, targetC, start_amount);
+		int32_t L_3 = __this->get_startC_9();
+		int32_t L_4 = __this->get_targetC_10();
+		int32_t L_5 = V_0;
+		int32_t L_6;
+		L_6 = Currency_Help_currencyExchange_m1F467E66A7273A8D0A205191AB7E831B0FCA7177(__this, L_3, L_4, L_5, /*hidden argument*/NULL);
+		V_1 = L_6;
+		// string startC_s = "";
+		V_2 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		// string targetC_s = "";
+		V_3 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		// if (startC==0){
+		int32_t L_7 = __this->get_startC_9();
+		if (L_7)
+		{
+			goto IL_0041;
+		}
+	}
+	{
+		// startC_s = " USD is ";
+		V_2 = _stringLiteral91830CFDB9F0113262421856FD423866C4AD696B;
+		// } else {
+		goto IL_0047;
+	}
+
+IL_0041:
+	{
+		// startC_s = " Pesos is ";
+		V_2 = _stringLiteralD9655DBBB859B019801BDD285AC4606E357C5621;
+	}
+
+IL_0047:
+	{
+		// if (targetC==0){
+		int32_t L_8 = __this->get_targetC_10();
+		if (L_8)
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		// targetC_s = " USD";
+		V_3 = _stringLiteral1C7CA35CB508A84725D9D97E13B3D5DB7DC00B12;
+		// } else {
+		goto IL_005d;
+	}
+
+IL_0057:
+	{
+		// targetC_s = " Pesos";
+		V_3 = _stringLiteralEC916FEDDC66F6F5DF8FE2D8C9E8153B824416E9;
+	}
+
+IL_005d:
+	{
+		// status_text.text = start_amount + startC_s + target_amount + targetC_s;
+		Text_t6A2339DA6C05AE2646FC1A6C8FCC127391BE7FA1 * L_9 = __this->get_status_text_8();
+		String_t* L_10;
+		L_10 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_0), /*hidden argument*/NULL);
+		String_t* L_11 = V_2;
+		String_t* L_12;
+		L_12 = Int32_ToString_m340C0A14D16799421EFDF8A81C8A16FA76D48411((int32_t*)(&V_1), /*hidden argument*/NULL);
+		String_t* L_13 = V_3;
+		String_t* L_14;
+		L_14 = String_Concat_m37A5BF26F8F8F1892D60D727303B23FB604FEE78(L_10, L_11, L_12, L_13, /*hidden argument*/NULL);
+		NullCheck(L_9);
+		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_9, L_14);
 		// }
 		return;
 	}
@@ -24424,11 +24537,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Currency_Help_getStartCurrency_m1B087835
 {
 	{
 		// startC = _dropdown_start.value; //TODO: this is wrong
-		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_0 = __this->get__dropdown_start_10();
+		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_0 = __this->get__dropdown_start_11();
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26_inline(L_0, /*hidden argument*/NULL);
-		__this->set_startC_8(L_1);
+		__this->set_startC_9(L_1);
 		// }
 		return;
 	}
@@ -24438,11 +24551,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Currency_Help_getTargetCurrency_mF29AF97
 {
 	{
 		// targetC = _dropdown.value;
-		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_0 = __this->get__dropdown_11();
+		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_0 = __this->get__dropdown_12();
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = Dropdown_get_value_mFBF47E0C72050C5CB96B8B6D33F41BA2D1368F26_inline(L_0, /*hidden argument*/NULL);
-		__this->set_targetC_9(L_1);
+		__this->set_targetC_10(L_1);
 		// }
 		return;
 	}
@@ -24457,15 +24570,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Currency_Help_Start_mF9635C84424FAC47C06
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// _dropdown.value = Data.defaultCurrency;
-		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_0 = __this->get__dropdown_11();
+		// _dropdown_start.value = Data.defaultCurrency;
+		Dropdown_t099F5232BB75810BC79EED6E27DDCED46C3BCD96 * L_0 = __this->get__dropdown_start_11();
 		IL2CPP_RUNTIME_CLASS_INIT(Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_StaticFields*)il2cpp_codegen_static_fields_for(Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var))->get_defaultCurrency_2();
 		NullCheck(L_0);
 		Dropdown_set_value_mE4418D205D53F8A3AD23B957D1A8CD71489CB3B9(L_0, L_1, /*hidden argument*/NULL);
 		// startC = Data.defaultCurrency;
 		int32_t L_2 = ((Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_StaticFields*)il2cpp_codegen_static_fields_for(Data_t14E47C3ECEA81C6E00A0C71917C0E74F6F05DB14_il2cpp_TypeInfo_var))->get_defaultCurrency_2();
-		__this->set_startC_8(L_2);
+		__this->set_startC_9(L_2);
 		// }
 		return;
 	}

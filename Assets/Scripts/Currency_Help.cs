@@ -16,6 +16,8 @@ public class Currency_Help : MonoBehaviour{
 	public GameObject USD_prefab;
 	[SerializeField]
 	public GameObject pesos_prefab;
+	[SerializeField]
+	public Text status_text;
 	
 	// 0: USD
 	// 1: Pesos
@@ -40,6 +42,26 @@ public class Currency_Help : MonoBehaviour{
 		Debug.Log(Data.dropNumber);
         SceneManager.LoadScene(1);
     }
+
+	public void updateText(){
+		int start_amount = int.Parse(inputField.text);
+		int target_amount = currencyExchange(startC, targetC, start_amount);
+		string startC_s = "";
+		string targetC_s = "";
+		if (startC==0){
+			startC_s = " USD is ";
+		} else {
+			startC_s = " Pesos is ";
+		}
+
+		if (targetC==0){
+			targetC_s = " USD";
+		} else {
+			targetC_s = " Pesos";
+		}
+
+		status_text.text = start_amount + startC_s + target_amount + targetC_s;
+	}
 	
 	// will return the amount needed in the target currency
 	public int currencyExchange(int startC, int targetC, int amount){
@@ -73,7 +95,7 @@ public class Currency_Help : MonoBehaviour{
 	
     // Start is called before the first frame update
     void Start(){
-		_dropdown.value = Data.defaultCurrency;
+		_dropdown_start.value = Data.defaultCurrency;
 		startC = Data.defaultCurrency;
 		//Debug.Log(Data.defaultCurrency);
     }
